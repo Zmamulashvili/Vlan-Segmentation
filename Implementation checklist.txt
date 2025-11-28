@@ -1,0 +1,7 @@
+☑ Create VLANs on switch
+☑ Assign switch ports to VLANs
+☑ Configure router subinterfaces
+☑ Assign static IPs to PCs
+☑ Configure trunk between switch and router
+☑ Test connectivity within VLANs
+☑ Test inter-VLAN routing
