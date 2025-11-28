@@ -1,2 +1,42 @@
 # Vlan-Segmentation
 Cisco Packet Tracer lab demonstrating VLANs, trunking, and inter-VLAN routing using router-on-a-stick.
+# Office VLAN Lab
+
+## Project Description
+This lab simulates an office network with multiple VLANs and inter-VLAN routing. It is designed for practicing VLAN creation, port assignment, trunk configuration, and router subinterfaces.
+
+## Network Topology
+- Devices: 1 Router, 1 Switch, 24 PCs
+- VLANs: 5 VLANs (10, 20, 30, 40, 50)
+- VLAN to PC distribution:
+  - VLAN 10 (Department 1)   – 5 PCs
+  - VLAN 20 (Department 2)   – 5 PCs
+  - VLAN 30 (Department 3)   – 4 PCs
+  - VLAN 40 (Department 4)   – 5 PCs
+  - VLAN 50 (Department 5)   – 5 PCs
+
+## IP Addressing
+| VLAN | Subnet           | Default Gateway | Hosts |
+|------|-----------------|----------------|-------|
+| 10   | 192.168.10.0/24 | 192.168.10.1   | 5     |
+| 20   | 192.168.20.0/24 | 192.168.20.1   | 5     |
+| 30   | 192.168.30.0/24 | 192.168.30.1   | 4     |
+| 40   | 192.168.40.0/24 | 192.168.40.1   | 5     |
+| 50   | 192.168.50.0/24 | 192.168.50.1   | 5     |
+
+## Lab Setup Instructions
+1. Open the Packet Tracer file: `Office_VLAN_Lab.pkt`
+2. Verify VLANs and port assignments on the switch:
+   - `show vlan brief`
+3. Verify trunk configuration between switch and router.
+4. Verify router subinterfaces for inter-VLAN routing.
+5. Test connectivity:
+   - Ping the router gateway from PCs in each VLAN.
+   - Ping PCs across VLANs to ensure routing works.
+
+## Screenshots
+- See `Diagrams/Logical_View.png` for the network layout.
+
+## Notes
+- All PCs are assigned static IP addresses.
+- DHCP is not configured in this lab.
